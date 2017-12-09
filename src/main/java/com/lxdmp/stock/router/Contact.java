@@ -2,11 +2,21 @@ package com.lxdmp.stock.router;
 
 import java.io.Serializable;
 
+import javax.ws.rs.FormParam;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Contact implements Serializable 
 {
 	private static final long serialVersionUID = -7173815854883493337L;
+	
+	//@FormParam("id")
 	private String id;
+	
+	//@FormParam("name")
 	private String name;
+	
+	//@FormParam("no")
 	private String no;
 	
 	@Override
